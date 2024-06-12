@@ -1,0 +1,52 @@
+/* Login.module.css */
+.container {
+    margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+}
+
+.labelemail,
+.labelpassword {
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Consistent gap between label and input */
+}
+
+.labelemail label,
+.labelpassword label {
+  width: 250px; /* Fixed width for labels for alignment */
+  text-align: right; /* Align label text to the right */
+}
+
+.input {
+  padding: 7px;
+  background-color: #f4f4f4;
+  border: none; /* Light border */
+  border-radius: 4px; /* Rounded corners for input fields */
+  width: 100%; /* Set input field width */
+  text-align: left;
+}
+
+button {
+  margin-top: 20px;
+
+  padding: 10px 100px;
+  background-color: #a9bcff; /* Primary color */
+  font-weight: bold;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #a0b0e8; /* Darker shade for hover */
+}

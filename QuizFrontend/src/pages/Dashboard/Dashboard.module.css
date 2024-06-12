@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #474444;
+  overflow: hidden;
+  position: relative;
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 50px;
+  height: 92vh;
+}
+
+.dash {
+  flex: 4;
+  height: 100vh;
+ 
+}
+ .create {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.questions {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+}
+.threeOutline{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+   height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  .threeOutline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    z-index: 1000;
+  }
+}

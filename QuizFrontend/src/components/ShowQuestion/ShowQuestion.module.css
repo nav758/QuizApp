@@ -1,0 +1,188 @@
+/* Basic styles for the overlay and container */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Added padding for small screens */
+  }
+  
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+  }
+  
+  /* Styles for the heading, question number, and timer */
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .questionNumber {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .timer {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: red;
+  }
+  
+  /* Styles for the question text */
+  .question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the options */
+  .options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    row-gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    padding: 10px;
+    border-radius: 15px;
+    height: 100px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .option:hover {
+    background: #45a049;
+  }
+  .textImage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0px;
+  }
+  /* Styles for the next and submit buttons */
+  .next, .submit {
+    background: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 10px 250px;
+  }
+  
+  .next:hover, .submit:hover {
+    background: #45a049;
+  }
+  
+  .submit {
+    background: #45a049;
+  }
+  
+
+  .selectedOption{
+    background: #45a049;
+  }
+
+  .containerCompleted {
+    background: white;
+    padding: 60px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    max-height: 500px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    position: relative;
+  }
+  .headingCompleted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    max-height: 500px;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+  .winImg{
+    width: 50%;
+    height: 50%;
+  }
+  .image{
+    width: 165px;
+    height: 100px;
+  }
+  img{
+    width: 90%;
+    height: 90%;
+  }
+  .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .score{
+    color: #4caf50;
+  }
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .overlay {
+      padding: 0px;
+    }
+    .container {
+      padding:25px;
+    }
+   
+  
+    .question {
+      font-size: 1.2em;
+    }
+    .options{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .option {
+      padding: 20px;
+      
+    }
+  
+    .next, .submit {
+      padding: 8px 16px;
+      margin: 10px 7rem;
+    }
+  
+    .heading {
+      /* flex-direction: column; */
+      gap: 10px;
+    }
+  
+    .questionNumber, .timer {
+      font-size: 1em;
+    }
+  }
+  

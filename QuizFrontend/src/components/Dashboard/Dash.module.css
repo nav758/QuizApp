@@ -1,0 +1,204 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    border-radius: 8px; 
+    color: #474444;
+    background-color: #EDEDED;
+    margin: 0;
+}
+
+
+.heading_container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 25px;
+    padding: 20px;
+    gap: 10px;
+}
+
+
+.heading_container > div {
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.headingQuiz{
+    color: #FF5D01;
+}
+.headingQuestion{
+    color: #60B84B;
+}
+.headingImpression{
+    color: #5076FF;
+}
+.headingUser{
+    color: #5076FF;
+}
+.stats1 {
+    color: #FF5D01;
+}
+.stats2 {
+    color: #60B84B;
+}
+.stats3 {
+    color: #5076FF;
+}
+
+/* Style for the h1 inside stats */
+.heading_container h1 {
+    margin: 0;
+    font-size: 1rem;
+}
+.heading_container span {
+    font-size: 48px;
+}
+
+/* Container for the trending quizzes */
+.trendingQuize {
+    margin-top: 20px;
+   padding: 0 60px;
+   overflow-y: hidden;
+    
+}
+
+.quizes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    height: 80%; 
+  overflow-y: scroll; 
+  scrollbar-width: none;
+}
+
+/* Trending quizzes header */
+.trendingQuize h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+   
+}
+
+/* Card for individual trending quizzes */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* Adjusted width to fit four cards in each row */
+    max-width: 200px;
+    height: auto;
+    position: relative;
+    margin-right: 20px; /* Added margin between cards */
+}
+.eyes{
+    position: absolute;
+    right: 0px;
+    top: 25px;
+    width: 70px;
+    height: 70px;
+    color: #FF5D01;
+    font-weight: bold;
+
+}   
+
+/* Additional styles for quiz info inside the card */
+.card div:first-child {
+    /* font-size: 28px; */
+    font-weight: bold;
+    width: 1em;
+}
+
+.card div:last-child {
+    /* font-size: 16px; */
+
+}
+
+.date{
+    color: #60B84B;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0px;
+    }
+    .heading_container {
+        margin-top: 30px;
+    }
+    .heading_container > div {
+        width: 45%;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+    .heading_container span {
+        font-size: 36px;
+    }
+    .trendingQuize h1 {
+        font-size: 20px;
+    }
+    .card {
+    width: calc(33.33% - 20px); 
+    }
+    .card div:first-child {
+        font-size: 16px;
+    }
+    .card div:last-child {
+        font-size: 14px;
+    }
+    .quizes {
+    height: 110%;
+    }
+    .eyes{
+        top: 5px;
+    }
+}
+
+
+@media (max-width: 480px) {
+   
+    .card {
+        width: calc(80% - 20px); 
+    }
+    .heading_container {
+        margin-top: 30px;
+    }
+    .heading_container > div {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+
+    }
+    .heading_container span {
+        font-size: 24px;
+    }
+    .trendingQuize h1 {
+        font-size: 18px;
+    }
+    .card div:first-child {
+        font-size: 14px;
+    }
+    .card div:last-child {
+        font-size: 12px;
+    }
+    .quizes {
+        height: 110%;
+        }
+    .eyes{
+        top: 5px;
+    }
+}

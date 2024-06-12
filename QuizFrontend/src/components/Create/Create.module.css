@@ -1,0 +1,113 @@
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container div {
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  height: 30px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+input::placeholder{
+  font-size: larger;
+  color: #9F9F9F;
+}
+.type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #9F9F9F;
+}
+
+.customRadio input {
+  display: none;
+}
+.customRadio input:checked + .customRadioLabel {
+    background-color: #60b84b;
+    color: white;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 130px;
+    height: 10%;
+   
+  }
+  
+
+.customRadioLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 130px;
+    padding: 8px;
+    border-radius: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  gap: 30px;
+}
+
+.button div {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #60b84b;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  font-weight: 600;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+}
+
+.button div:hover {
+  background-color: #0056b3;
+}
+
+.button .cancel {
+  background-color: #fff;
+  color: #000;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  
+
+  .type div {
+    margin-bottom: 10px;
+  }
+
+  .button div {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Jomhuria');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.overlay{
+    padding: 0;
+    margin: 0;
+}
+
+.heading {
+    font-family: 'Jomhuria', cursive;
+    font-size: 65px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #474444;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0px;
+    margin: 130px 0;
+    color: #474444;
+}
+.Logout {
+    
+    margin: 12px  0px;
+}
+.Logout .button:hover{
+    cursor: pointer;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+    /* transition: 0.3s; */
+    border-radius: 15px;
+   width: 70%;
+}
+hr{
+    width: 75%;
+}
+
+.button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    width: 80%;
+    cursor: pointer;
+}
+
+
+
+.active {
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: 0.5s;
+    border-radius: 15px;
+    width: 90%;    
+    height: 100%;
+    padding: 10px;
+
+}

@@ -1,0 +1,331 @@
+/* Base styles */
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup.show {
+  display: flex;
+}
+
+.container {
+  max-width: 600px;
+  min-width: 450px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.questions {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  margin-bottom: 40px;
+  height: 10px;
+}
+
+.question {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  gap: 2px;
+  border: 2px solid #ccc; /* Default border color */
+  background-color: #fff;
+}
+.close {
+  position: absolute;
+  right: 3px;
+  top: 1px;
+  font-size: 15px;
+}
+.question.active {
+  border-color: #007bff; /* Change border color for active question */
+}
+
+.addQuestion {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  gap: 2px;
+  background-color: #fff;
+  border: none;
+  color: black;
+  font-weight: 550;
+}
+
+.info1 {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 9px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.questionInputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.questionInput {
+  flex: 1;
+  margin-right: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 100%;
+}
+.pollTypeContainer {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pollTypeOptions {
+  display: flex;
+  gap: 0px;
+}
+.optionsContain {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 80%;
+}
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.optionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.optionType {
+  margin-right: 10px;
+}
+
+.optionInput {
+  flex: 1;
+  margin-right: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ 
+  width: 12em;
+  height: 20px;
+}
+.optionInputs {
+  flex: 1;
+  margin-right: 10px;
+  background-color: #fff;
+  padding: 10px ;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 12em;
+  height: 20px;
+}
+
+.correctRadio {
+  margin-right: 10px;
+  
+}
+.correctOption {
+    background-color: #60b84b;color: #fff;
+  }
+.addOption {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 8px 56px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.addOption:hover {
+  background-color: #0056b3;
+}
+
+.removeOption {
+  background-color: transparent;
+  color: #ff0000;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  position: absolute;
+  right: 30px;
+}
+.remove{
+    background-color: transparent;
+    color: #ff0000;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    position: absolute;
+    right: 200px;
+}
+.buttonContainer {
+  display: flex;
+  gap: 50px;
+  margin: 10px;
+}
+
+.cancelButton {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.createQuizButton {
+  background-color: #60b84b;
+  color: #fff;
+}
+
+.timerContainer {
+  position: absolute;
+  right: 0;
+  top: 170px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.timerOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.radioInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border-radius: 106px;
+}
+
+
+
+
+.timerOption {
+  padding: 5px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.activeTimer {
+  background-color: #d60000;
+  color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    min-width: unset;
+    padding: 20px;
+    height: auto;
+  }
+
+  .optionsContain {
+    padding-right: 20px;
+  }
+  .remove{
+    right: 40px;
+  }
+  .info1 {
+    /* position: static; */
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .formGroup {
+    margin-bottom: 10px;
+  }
+
+  .questionInput {
+    width: 100%;
+  }
+
+  .addOption {
+    width: 50vw;
+
+    padding: 10px;
+  }
+ .timerContainer{
+    top: 180px;
+ }
+  .optionInput {
+    width: 6em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .optionInputs {
+    width: 6em;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  .correctRadio {
+    margin-bottom: 10px;
+  }
+  .removeOption {
+    right: 60px;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .remove{
+    right: 230px;
+  }  
+  .timerContainer{
+    top: 180px;
+  }
+  .optionInputs {
+    width: 10em;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .optionInput {
+    width: 10em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
