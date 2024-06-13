@@ -10,7 +10,11 @@ const app = express();
 app.use(express.json());
 
 
-app.use(cors());
+app.use( cors({
+    origin: ["https://quiz-app-chi-woad.vercel.app"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  }));
 
 mongoose
     .connect(process.env.MONGO_URI || "mongodb+srv://rainaveen75:fHTUANJICDDicvkx@cluster0.y38cdvz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
