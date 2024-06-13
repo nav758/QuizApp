@@ -1,7 +1,7 @@
 import axios from "axios";
 
 import { Navigate } from "react-router-dom";
-const backendUrl = `https://quiz-app-bktm.vercel.app/api/v1`;
+const backendUrl = `https://quiz-backend-ecij.vercel.app/api/v1`;
 const navigate = Navigate;
 
 export  const createQuiz = async (data) => {
