@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const backendUrl = `http://localhost:4000/api/v1`;
+const backendUrl = `https://quiz-app-bktm.vercel.app/api/v1`;
 
 export const registerUser = async ({ name, email, password, }) => {
   try {
