@@ -22,7 +22,7 @@ function Dashboard() {
   const [quizName, setQuizName] = useState("");
   const { setQuizId } = useContext(UserContext);
   const [showQuestionAnalysis, setShowQuestionAnalysis] = useState(false);
-  const [showSidebar, setShowSidebar] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(true);
   
   const handleDash = () => {
     setDash(true);
@@ -92,8 +92,6 @@ function Dashboard() {
   };
 
   window.addEventListener("resize", handleResize);
-  // if (window.innerWidth <= 768) setShowSidebar(true);
-  console.log("showQuestionAnalysis:", showQuestionAnalysis);
   return (
     <div className={style.container}>
       <div className={style.threeOutline} onClick={toggle}>
