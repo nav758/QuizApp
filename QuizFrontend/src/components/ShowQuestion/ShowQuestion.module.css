@@ -1,4 +1,4 @@
-/* Basic styles for the overlay and container */
+
 .overlay {
     position: fixed;
     top: 0;
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px; /* Added padding for small screens */
+    padding: 10px; 
   }
   
   .container {
@@ -20,10 +20,10 @@
     max-width: 800px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    box-sizing: border-box;
   }
   
-  /* Styles for the heading, question number, and timer */
+ 
   .heading {
     display: flex;
     justify-content: space-between;
@@ -41,13 +41,13 @@
     color: red;
   }
   
-  /* Styles for the question text */
+ 
   .question {
     font-size: 1.5em;
     margin-bottom: 20px;
   }
   
-  /* Styles for the options */
+
   .options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -78,7 +78,7 @@
     gap: 30px;
     padding: 0px;
   }
-  /* Styles for the next and submit buttons */
+ 
   .next, .submit {
     background: #4caf50;
     color: white;
@@ -147,13 +147,15 @@
   .score{
     color: #4caf50;
   }
-  /* Media queries for responsiveness */
+ 
   @media (max-width: 768px) {
     .overlay {
       padding: 0px;
     }
     .container {
       padding:25px;
+      height: 100%;
+      overflow-y: scroll;
     }
    
   
