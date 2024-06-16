@@ -53,7 +53,7 @@
     color: #5076FF;
 }
 
-/* Style for the h1 inside stats */
+
 .heading_container h1 {
     margin: 0;
     font-size: 1rem;
@@ -62,7 +62,7 @@
     font-size: 48px;
 }
 
-/* Container for the trending quizzes */
+
 .trendingQuize {
     margin-top: 20px;
    padding: 0 60px;
@@ -75,19 +75,19 @@
     flex-wrap: wrap;
     width: 100%;
     gap: 20px;
-    height: 80%; 
+    height: 90%; 
   overflow-y: scroll; 
   scrollbar-width: none;
 }
 
-/* Trending quizzes header */
+
 .trendingQuize h1 {
     font-size: 24px;
     margin-bottom: 10px;
    
 }
 
-/* Card for individual trending quizzes */
+
 .card {
     display: flex;
     flex-direction: column;
@@ -98,11 +98,11 @@
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    width: calc(25% - 20px); /* Adjusted width to fit four cards in each row */
+    width: calc(25% - 20px); 
     max-width: 200px;
     height: auto;
     position: relative;
-    margin-right: 20px; /* Added margin between cards */
+    margin-right: 20px; 
 }
 .eyes{
     position: absolute;
@@ -115,7 +115,7 @@
 
 }   
 
-/* Additional styles for quiz info inside the card */
+
 .card div:first-child {
     /* font-size: 28px; */
     font-weight: bold;
@@ -132,7 +132,7 @@
     font-weight: 500;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .container {
         padding: 0px;
@@ -161,7 +161,7 @@
         font-size: 14px;
     }
     .quizes {
-    height: 110%;
+    height: 90%;
     }
     .eyes{
         top: 5px;
