@@ -94,7 +94,10 @@
       padding: 10px;
     }
    th{
-     font-size: 9px;
+     font-size: 10px;
+   }
+   td{
+     font-size: 10px;
    }
     .header {
       font-size: 1.5em;
