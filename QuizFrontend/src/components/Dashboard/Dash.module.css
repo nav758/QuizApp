@@ -75,7 +75,7 @@
     flex-wrap: wrap;
     width: 100%;
     gap: 20px;
-    height: 90%; 
+    height: 80%; 
   overflow-y: scroll; 
   scrollbar-width: none;
 }
