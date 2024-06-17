@@ -6,7 +6,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { UserContext } from "../../../utils/UserContext";
 import { getQuizbyId } from "../../apis/quiz";
 
-function Polls({ onClose, onCreateQuiz }) {
+function Polls({ onClose, onCreateQuiz,setupdateQuiz }) {
   const { quizId } = useContext(UserContext);
 
   const [questions, setQuestions] = useState([
