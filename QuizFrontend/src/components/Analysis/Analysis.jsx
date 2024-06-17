@@ -135,7 +135,7 @@ function Analysis({ setQuestionsAnalysis }) {
       )}
       {showUpdateModal && quizType === "Poll" && (
         <div>
-          <Polls onClose={() => setShowUpdateModal(false)} />
+          <Polls onClose={() => setShowUpdateModal(false)} setupdateQuiz={handleUpdatedata} />
         </div>
       )}
       {deleteModel && (
