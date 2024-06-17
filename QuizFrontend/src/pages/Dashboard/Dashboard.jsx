@@ -27,6 +27,7 @@ function Dashboard() {
   const handleDash = () => {
     setDash(true);
     setAnalytics(false);
+    if (window.innerWidth < 768)
     setShowSidebar(!showSidebar);
     setShowQuestionAnalysis(false);
   };
@@ -35,6 +36,7 @@ function Dashboard() {
     setDash(false);
     setAnalytics(true);
     setShowQuestionAnalysis(false);
+    if (window.innerWidth < 768) 
     setShowSidebar(!showSidebar);
   };
 
@@ -46,6 +48,7 @@ function Dashboard() {
 
   const handleCreate = () => {
     setCreate(true);
+    if (window.innerWidth < 768)
     setShowSidebar(!showSidebar);
   };
 
@@ -86,12 +89,15 @@ function Dashboard() {
     }
     setCreate(false);
   };
+
   const handleResize = () => {
- if(window.innerWidth > 768) setShowSidebar(true);
- else setShowSidebar(false);
+   if(window.innerWidth > 768) setShowSidebar(true);
+   else setShowSidebar(false);
   };
 
   window.addEventListener("resize", handleResize);
+  // if (window.innerWidth <= 768) setShowSidebar(true);
+  console.log("showQuestionAnalysis:", showQuestionAnalysis);
   return (
     <div className={style.container}>
       <div className={style.threeOutline} onClick={toggle}>
